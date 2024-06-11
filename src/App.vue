@@ -195,7 +195,7 @@ export default {
   height: 550px;
   background-color: #e40f0f;
   border: 5px solid #000;
-  border-radius: 0px 0px 0px 20px ;
+  border-radius: 20px 20px 20px 20px ;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
@@ -206,7 +206,7 @@ export default {
 .pokedex {
   width: 300px;
   background-color: #faf5f5;
-  border: 5px solid #000;
+  border: 2px solid #000;
   border-radius: 0px 0px 0px 20px ;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
