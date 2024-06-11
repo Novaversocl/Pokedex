@@ -1,2 +1,24 @@
-# Pokedex
-Aplicación con temática de la serie Pokémon haciendo uso de la  PokéAP,Css,Texto a audio.
+# pokemon
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
