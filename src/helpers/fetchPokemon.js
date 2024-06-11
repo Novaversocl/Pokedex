@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { URL_BASE_POKEMON } from '@/constants/urlConstants';
 
-export const getPokemonPerPage = async (start = 251, end = 385) => {
+export const getPokemonPerPage = async (start = 0, end = 150) => {
     try {
         const limit = end - start;
         const offset = start;
