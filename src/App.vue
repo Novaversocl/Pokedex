@@ -62,7 +62,9 @@ export default {
 
           <h1 class="texto__screen press-start-2p-regular">Pokedex</h1>
 
-          <p class="texto__screen press-start-2p-regular__2">Pokémons descubiertos: {{ contadorDescubiertos }}</p>
+
+
+          <p class="texto__screen2 press-start-2p-regular__2">Pokémons descubiertos: {{ contadorDescubiertos }}</p>
 
 
         </div>
@@ -184,9 +186,9 @@ export default {
 
 .press-start-2p-regular__2 {
   font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 
@@ -303,7 +305,53 @@ padding-bottom: 1rem;
   color: #1f4301;
   text-align: center;
 
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-pace: nowrap; /* Keeps the content on a single line */
+  
+  animation: 
+    typing 3.5s steps(30, end), 
+    blink-caret .75s step-end infinite;
+
+}/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.texto__screen2 {
+
+padding: 1rem;
+color: #1f4301;
+text-align: center;
+
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+white-pace: nowrap; /* Keeps the content on a single line */
+
+animation: 
+  typing .5s steps(30, end), 
+  blink-caret .75s step-end infinite;
+
+}/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
+
+
+
 
 .screen img {
   width: 100%;
@@ -344,14 +392,30 @@ padding-bottom: 1rem;
 
 
 .prev-btn {
-
   padding: 10px;
-
   border-radius: 100%;
   background-color: #b61e1e;
   color: #fff;
   cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  animation: blink 0.5s infinite;
+}
 
+@keyframes blink {
+  0%, 100% {
+    background-color: rgb(52, 3, 3);
+   
+    
+  }
+  50% {
+    background-color: rgb(255, 21, 21);
+   
+    box-shadow: 0 0 10px 0.1px #f60909;
+
+
+  }
 }
 
 .prev-btn__superior {
