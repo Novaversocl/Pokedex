@@ -41,8 +41,9 @@ export default {
     <div class="pokedex__capa2">
 
       <div class="contenedor__superior">
+        <button class="prev-btn__superior" :class="{ 'prev-btn__superioraudio': contadorDescubiertos > 0 }"></button>
 
-        <button class="prev-btn__superior"></button>
+        <!-- <button class="prev-btn__superior"></button> -->
         <button class="prev-btn__superiorrojo"></button>
         <button class="prev-btn__superioramarillo"></button>
         <button class="prev-btn__superiorverde"></button>
@@ -133,6 +134,9 @@ export default {
 
 <style>
 
+.red-button {
+  background-color: red;
+}
 .container__palanca {
         display: flex;
         justify-content: space-between;
@@ -162,6 +166,8 @@ export default {
         font-family: Arial, Helvetica, sans-serif;
         -webkit-text-stroke-width: 1.0rem;
         -webkit-text-stroke-color: #041413;
+
+        
     }
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -473,9 +479,33 @@ from, to { border-color: transparent }
   cursor: pointer;
   color: white;
   box-shadow: 0 0 7px 7px #437cac;
- 
-
 }
+
+.prev-btn__superioraudio {
+  padding: 1.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#1e23ad, #0bfdfd);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 7px 7px #437cac;
+  animation: blink2 0.5s infinite;
+}@keyframes blink2 {
+  0%, 100% {
+    background-color: #4a4eb4;
+   
+    
+  }
+  50% {
+    background-color: #4247cc;
+   
+    box-shadow: 0 0 10px 0.1px #191fd0;
+
+
+  }
+}
+
+
+
 
 .prev-btn__superiorrojo {
   padding: 0.5rem;

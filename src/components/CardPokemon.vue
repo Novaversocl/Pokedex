@@ -36,6 +36,7 @@ export default {
             }
             if (!this.coincidencia) {
                 this.nombreIngresado = ""; // Limpiar el campo si el nombre no coincide
+                alert("¡Ups! Inténtalo de nuevo :")
             }
         },
 
@@ -112,7 +113,7 @@ export default {
     width: 200px; /* Ancho fijo */
     height: 200px; /* Alto fijo */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Alinea el contenido (imagen) hacia la izquierda */
     align-items: center;
   
     
