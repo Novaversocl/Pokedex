@@ -14,6 +14,13 @@ Este desafío no solo puso a prueba mis habilidades técnicas, sino también mi 
 
 Si estás interesado en saber más sobre este desafío o en verlo en acción, ¡no dudes en contactarme!
 
+## Instrucciones
+
+1. Ingresa el nombre del Pokémon en el campo de texto.
+2. Presiona el botón **Descubrir**.
+3. ¡Listo! La información del Pokémon aparecerá en pantalla.
+4. 
+
 🌟 I would like to share with you one of my latest challenges: the creation of an Interactive Pokédex.
 In this challenge, I set out to use my skills in JavaScript, Vue.js, and CSS to build a digital Pokédex that went beyond the ordinary. Using the Pokémon API, I designed and developed a dynamic and addictive gaming experience that is sure to captivate lovers of these adorable pocket monsters. 🌟
 One of the highlights of this challenge was the implementation of advanced visual effects, such as button design and 3D effects, using advanced CSS techniques. The result was an immersive experience that not only entertains but also visually impresses. ✨
@@ -21,6 +28,12 @@ Additionally, I integrated the exciting capability of 🔊 speechSynthesis to ha
 This challenge not only tested my technical skills but also my ability to creatively solve problems and create interactive experiences that captivate and delight users. 🚀
 If you're interested in learning more about this challenge or seeing it in action, feel free to contact me!
 
+
+   ## Instructions
+
+1. Enter the name of the Pokémon in the text field.
+2. Press the **Discover** button.
+3. Done! The Pokémon's information will appear on the screen.
 
 ## Project setup
 ```
