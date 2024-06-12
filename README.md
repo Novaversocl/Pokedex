@@ -5,7 +5,8 @@
 
 
 
-![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/bd5834bd-6cab-498d-9769-51b8dec6d949)
+![Animation2](https://github.com/Novaversocl/Pokedex/assets/95386670/e20687f5-7d95-4b9c-8ffa-a3406562fa63)
+
 
 En este desafío, me propuse utilizar mis habilidades en JavaScript, Vue.js,Api Axios y CSS para construir una Pokédex digital que fuera más allá de lo común. Utilizando la API de Pokémon, diseñé y desarrollé una experiencia de juego dinámica y adictiva que seguramente cautivará a los amantes de estos adorables monstruos de bolsillo. 🌟
 Uno de los aspectos más destacados de este desafío fue la implementación de efectos visuales avanzados, como el diseño de los botones y los efectos 3D, utilizando técnicas avanzadas de CSS. El resultado fue una experiencia envolvente que no solo entretiene, sino que también sorprende visualmente. ✨
