@@ -1,7 +1,7 @@
 # Pokedex Pokemon
 
 
-![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/f98785f4-5d1b-446b-a36a-38e7d255da11)
+![Animation](https://github.com/Novaversocl/Pokedex/assets/95386670/0d6d6454-0fb1-4e98-bf3e-73a536663e1d)
 
 
 
