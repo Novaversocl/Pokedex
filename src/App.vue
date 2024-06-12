@@ -38,42 +38,72 @@ export default {
   <section class="poke">
 
 
-<div class="pokedex__capa2">
-  <!-- pokedex__capa2 -->
-  <div class="pokedex">
-      <div class="screen">
+    <div class="pokedex__capa2">
 
-        <h1 class="texto__screen press-start-2p-regular">Pokedex</h1>
+      <div class="contenedor__superior">
 
-        <p class="texto__screen press-start-2p-regular__2">Pokémons descubiertos: {{ contadorDescubiertos }}</p>
-
+        <button class="prev-btn__superior"></button>
+        <button class="prev-btn__superiorrojo"></button>
+        <button class="prev-btn__superioramarillo"></button>
+        <button class="prev-btn__superiorverde"></button>
 
       </div>
 
-<div class="controls-container">
+      <div class="salto__linea"></div>
 
-  <div class="controls__2">
-        <button class="prev-btn"></button>
+      <div class="linea"></div>
+
+      
+
+      <div class="salto_carcasa"></div>
+      <!-- pokedex__capa2 -->
+      <div class="pokedex">
+        <div class="screen">
+
+          <h1 class="texto__screen press-start-2p-regular">Pokedex</h1>
+
+          <p class="texto__screen press-start-2p-regular__2">Pokémons descubiertos: {{ contadorDescubiertos }}</p>
+
+
+        </div>
+
+        <div class="controls-container">
+
+          <div class="controls__2">
+            <button class="prev-btn"></button>
+          </div>
+
+
+          <div class="controls">
+
+            <!-- <button class="prev-btn"></button> -->
+            <button class="next-btn"></button>
+            <button class="next-btn"></button>
+            <button class="next-btn"></button>
+            <button class="next-btn"></button>
+          </div>
+
+
+        </div>
       </div>
 
+<div class="container__palanca">
 
-      <div class="controls">
-        
-        <!-- <button class="prev-btn"></button> -->
-        <button class="next-btn"></button>
-        <button class="next-btn"></button>
-        <button class="next-btn"></button>
-        <button class="next-btn"></button>
-      </div>
+
+<button class="cuadrado"></button>
+
+
+<div class="signo__suma">+</div>
 
 </div>
+<div class="linea"></div>
+
+<!-- <div class="cuadrado">-</div>
+
+<div class="signo__suma">+</div> -->
+
+      <!-- pokedex__capa2 -->
     </div>
-
-
-
-
-  <!-- pokedex__capa2 -->
-</div>
 
 
 
@@ -98,6 +128,38 @@ export default {
 </template>
 
 <style>
+
+.container__palanca {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.cuadrado{
+
+  width: 300px;
+  height: 70px;
+  margin: 60px;
+  border-radius: 5px;
+  background-color: #148245;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
+
+
+
+.signo__suma {
+        color: #012f2d;
+        font-size: 10rem;
+        font-weight: bold;
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-stroke-width: 1.0rem;
+        -webkit-text-stroke-color: #041413;
+    }
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .press-start-2p-regular {
@@ -161,6 +223,18 @@ export default {
 }
 
 
+.salto_carcasa {
+
+  padding-bottom: 3rem;
+
+}
+
+.salto__linea {
+
+padding-bottom: 1rem;
+
+}
+
 .titulo {
 
   font-family: Arial, sans-serif;
@@ -189,25 +263,26 @@ export default {
 }
 
 
-.pokedex__capa2{
+.pokedex__capa2 {
 
   width: 350px;
-  height: 550px;
-  background-color: #e40f0f;
+  height: 620px;
+
+  background: linear-gradient(#fa0101, #a80606);
+
   border: 5px solid #000;
-  border-radius: 20px 20px 20px 20px ;
+  border-radius: 20px 20px 20px 20px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 0 7px 7px #100201;
 }
 
 
 .pokedex {
   width: 300px;
   background-color: #faf5f5;
-  border: 2px solid #000;
-  border-radius: 0px 0px 0px 20px ;
+  border: 1.5px solid #000;
+  border-radius: 0px 0px 0px 20px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -244,6 +319,20 @@ export default {
   justify-content: right;
 }
 
+.contenedor__superior {
+          
+        }
+        .prev-btn__superior, 
+        .prev-btn__superiorrojo, 
+        .prev-btn__superioramarillo, 
+        .prev-btn__superiorverde {
+            margin-right: 0.5rem;
+        }
+        .contenedor__superior button:last-child {
+            margin-right: 0; /* Eliminar el margen derecho del último botón */
+        }
+
+        
 .controls__2 {
 
   margin-top: 20px;
@@ -264,6 +353,45 @@ export default {
   cursor: pointer;
 
 }
+
+.prev-btn__superior {
+  padding: 1.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#1e23ad, #0bfdfd);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 7px 7px #437cac;
+ 
+
+}
+
+.prev-btn__superiorrojo {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#e50a0a, #ea3810);
+  cursor: pointer;
+  color: white;
+
+}
+.prev-btn__superioramarillo {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#efd80e, #b3b90e);
+  cursor: pointer;
+  color: white;
+
+}
+
+.prev-btn__superiorverde {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#19ef0e, #30cd1c);
+  cursor: pointer;
+  color: white;
+
+}
+
+
 
 
 .next-btn {
@@ -288,4 +416,18 @@ export default {
 .next-btn:hover {
   background-color: #1cd569;
 }
+
+.linea {
+ 
+            position: relative;
+            width: 100%; /* Ancho de la línea */
+            height: 2px; /* Grosor de la línea */
+            background-color: black; /* Color de la línea */
+            overflow: hidden; /* Ocultar parte del pseudo-elemento diagonal que se sale de la caja */
+            opacity: 0.5; /* Opacidad de la línea */
+       
+          }
+
+          
+   
 </style>
