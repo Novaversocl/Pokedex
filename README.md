@@ -1,9 +1,12 @@
 # Pokedex Pokemon
 
 
-![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/b70b229a-cd93-4ff4-a544-ff0a2d9d24e8)
+![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/f98785f4-5d1b-446b-a36a-38e7d255da11)
+![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/06c5fbd6-bf94-4816-b88b-3bb5589f4d56)
 
-![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/2112e0d6-c3c3-4c11-a803-4e28a76fccc1)
+
+![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/bd5834bd-6cab-498d-9769-51b8dec6d949)
+
 
 
 ## Project setup
