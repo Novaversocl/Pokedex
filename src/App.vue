@@ -62,6 +62,7 @@ export default {
 
           <h1 class="texto__screen press-start-2p-regular">Pokedex</h1>
 
+          <p class="texto__screenby press-start-2p-regularby">Novaverso</p>
 
 
           <p class="texto__screen2 press-start-2p-regular__2">Pokémons descubiertos: {{ contadorDescubiertos }}</p>
@@ -114,6 +115,7 @@ export default {
 
   </section>
 
+  <div class="salto__linea"></div>
 
 
   <h1 class="  press-start-2p-regular__3 ">Pokemon API</h1>
@@ -169,6 +171,14 @@ export default {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+}
+
+
+.press-start-2p-regularby {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.5rem;
 }
 
 
@@ -276,7 +286,20 @@ padding-bottom: 1rem;
   border-radius: 20px 20px 20px 20px;
   padding: 20px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  box-shadow: 0 0 7px 7px #100201;
+  box-shadow: 
+    5px 5px 15px rgba(0, 0, 0, 0.3), /* General shadow for the 3D effect */
+    -5px -5px 10px rgba(204, 87, 87, 0.5) inset, /* Top-left highlight for 3D effect */
+    5px 5px 10px rgba(0, 0, 0, 0.1) inset; /* Bottom-right shadow for 3D effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
+
+}
+.pokedex__capa2:hover {
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+  box-shadow: 
+    10px 10px 30px rgba(0, 0, 0, 0.3), /* General shadow for the 3D effect */
+    -10px -10px 20px rgba(4, 4, 4, 0.5) inset, /* Top-left highlight for 3D effect */
+    10px 10px 20px rgba(0, 0, 0, 0.1) inset; /* Bottom-right shadow for 3D effect */
 }
 
 
@@ -350,6 +373,31 @@ from, to { border-color: transparent }
 50% { border-color: orange; }
 }
 
+
+.texto__screenby {
+
+padding: 0;
+color: #1f4301;
+text-align: center;
+
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+white-pace: nowrap; /* Keeps the content on a single line */
+
+animation: 
+  typing 8.5s steps(30, end), 
+  blink-caret .95s step-end infinite;
+
+}/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
 
 
 
