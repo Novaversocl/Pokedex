@@ -18,6 +18,9 @@ export default {
     },
     
     methods: {
+        toLowerCase() {
+      this.nombreIngresado = this.nombreIngresado.toLowerCase();
+    },
         descubrirPokemon() {
             this.mostrarDescubrir = true;
             this.coincidencia = this.nombreIngresado === this.pokemon.name;
@@ -75,7 +78,7 @@ export default {
             </div>
 
             <div class="card__content">
-                <input type="text" v-model="nombreIngresado" v-if="!mostrarDescubierto">
+                <input type="text" v-model="nombreIngresado" v-if="!mostrarDescubierto" @input="toLowerCase">
                 <div class="salto"></div>
                 <button @click="descubrirPokemon" v-if="!mostrarDescubierto">Descubrir</button>
 
@@ -207,6 +210,8 @@ input {
     margin-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif;
     /* font-size: 10px; */
+    padding: 0.5rem;
+  
   }
 
 
