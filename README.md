@@ -2,7 +2,7 @@
 
 
 ![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/f98785f4-5d1b-446b-a36a-38e7d255da11)
-![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/06c5fbd6-bf94-4816-b88b-3bb5589f4d56)
+
 
 
 ![imagen](https://github.com/Novaversocl/Pokedex/assets/95386670/bd5834bd-6cab-498d-9769-51b8dec6d949)
