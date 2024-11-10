@@ -34,7 +34,7 @@ export default {
 
     <h1 class="textocentrado press-start-2p-regular">GAME 3D Pokedex Pokémon</h1>
 
-  <h2 class="textocentrado press-start-2p-regular">¿Quién es ese Pokémon?</h2>
+  <h3 class="textocentrado press-start-2p-regular">¿Quién es ese Pokémon?</h3>
 
 
   <section class="poke">
